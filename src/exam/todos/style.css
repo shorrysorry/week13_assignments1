@@ -1,0 +1,70 @@
+:root[color-theme='dark'] {
+    --border: white;
+    --font: white;
+    --background: black;
+}
+
+:root[color-theme='light'] {
+    --border: black;
+    --font: black;
+    --background: white;
+}
+
+html {
+    background: var(--background);
+}
+
+.dark-check {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+}
+
+.mode-text {
+    color: var(--font);
+}
+
+.title {
+    text-align: center;
+    font-weight: 900;
+    font-size: 40px;
+    color: var(--font)
+}
+
+.input-write {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-todo {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 500px;
+}
+
+.todos {
+    margin: auto;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 600px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+li {
+    color: var(--font);
+    list-style: none;   
+}
+
+span {
+    cursor: pointer;
+}
+
+span:active {
+    color: red;
+}
